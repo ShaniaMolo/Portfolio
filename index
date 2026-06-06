@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shania Molo | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#38bdf8;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.8rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Shania Molo</h1>
+        <h2>BS Information Systems Student</h2>
+        <p>
+            Passionate about technology, software development, database
+            management, and creating solutions that improve business processes.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a Bachelor of Science in Information Systems student
+            dedicated to learning software development, database design,
+            system analysis, and business technology solutions.
+            I enjoy building projects that solve real-world problems
+            while continuously improving my technical skills.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill-card">Java</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">System Analysis</div>
+        <div class="skill-card">Database Design</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Hotel Reservation System</h3>
+            <p>
+                A system for managing reservations, room availability,
+                customer records, and payments.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Inventory Management System</h3>
+            <p>
+                A database-driven application that tracks products,
+                stock levels, and inventory transactions.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Information System</h3>
+            <p>
+                A system designed to manage student profiles,
+                enrollment records, and academic information.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: github.com/ShaniaMolo</p>
+</section>
+
+<footer>
+    <p>© 2026 Shania Molo | Portfolio</p>
+</footer>
+
+</body>
+</html>
