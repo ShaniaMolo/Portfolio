@@ -1,103 +1,443 @@
-<!-- UPLOAD YOUR PROFILE PICTURE TO GITHUB AND CHANGE THE FILE NAME BELOW -->
-<img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>Shania Molo</h1>
-<h3>BS Information Systems Student</h3>
+<title>Shania Molo | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fffb;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo{
+    color:#4CAF50;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#4CAF50;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 10%;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#2E7D32;
+}
+
+.hero-text h2{
+    margin:15px 0;
+    color:#4CAF50;
+}
+
+.hero-text p{
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #C8E6C9;
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#2E7D32;
+    font-size:35px;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#2E7D32;
+    margin-bottom:10px;
+}
+
+/* Carousel */
+
+.carousel{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.project-image{
+    width:100%;
+    border-radius:15px;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:white;
+    border:none;
+    font-size:24px;
+    padding:12px 18px;
+    cursor:pointer;
+    border-radius:50%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
+.prev:hover,
+.next:hover{
+    background:#4CAF50;
+    color:white;
+}
+
+/* Contact */
+
+.contact-box{
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+
+footer{
+    background:#E8F5E9;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Shania Molo</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+
+    <div class="hero-text">
+        <h1>Hello, I'm Shania!</h1>
+
+        <h2>BS Information Systems Student</h2>
+
+        <p>
+            Hi! I'm a BSIS student who is passionate about technology and learning new skills.
+            I enjoy working on projects that enhance my knowledge in programming,
+            databases, and information systems.
+        </p>
+
+        <a href="#project" class="btn">View Project</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
+
+</div>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
 <div class="card">
-    <p>
-        Hi! I'm a BSIS student who is passionate about technology and
-        learning new skills. I enjoy working on projects that enhance
-        my knowledge in programming, databases, and information systems.
-    </p>
-
+<p>
+Hi! I'm a BSIS student who is passionate about technology and learning new skills.
+I enjoy working on projects that enhance my knowledge in programming,
+databases, and information systems.
+</p>
 </div>
-<div class="card-container">
-    <div class="card">
-        <h3>Java Programming</h3>
-        <p>Developing applications and system projects using Java.</p>
-    </div>
 
-    <div class="card">
-        <h3>MySQL</h3>
-        <p>Database design, management, and SQL queries.</p>
-    </div>
+</section>
 
-    <div class="card">
-        <h3>CSS (Computer System Servicing)</h3>
-        <p>Computer troubleshooting and hardware servicing skills.</p>
-    </div>
+<section id="skills">
 
-    <div class="card">
-        <h3>System Design</h3>
-        <p>Creating use case diagrams, activity diagrams, and system flows.</p>
-    </div>
+<h2 class="section-title">Skills</h2>
 
-    <div class="card">
-        <h3>UI/UX Design</h3>
-        <p>Designing user-friendly interfaces and experiences.</p>
-    </div>
-</div>
-<div class="card-container">
+<div class="grid">
 
-    <div class="card">
-        <img src="nc2.jpg" width="100%">
-
-        <h3>CSS NC II Certificate</h3>
-        <p>Computer System Servicing NC II</p>
-    </div>
-
-    <div class="card">
-        <img src="bytefest1.jpg" width="100%">
-        <img src="bytefest2.jpg" width="100%">
-
-        <h3>ByteFest Certificate</h3>
-        <p>Participation and achievement certificate.</p>
-    </div>
-
-    <div class="card">
-        <img src="filmfest.jpg" width="100%">
-
-        <h3>Film Fest Certificate</h3>
-        <p>Participation and achievement certificate.</p>
-    </div>
-
+<div class="card">
+<h3>Java Programming</h3>
+<p>Developing desktop applications and system projects.</p>
 </div>
 
 <div class="card">
+<h3>MySQL</h3>
+<p>Database creation and management.</p>
+</div>
 
-    <!-- UPLOAD YOUR PROJECT SCREENSHOT -->
-    <img src="ss1.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss2.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss3.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss4.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss5.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss6.jpg" alt="Project Screenshot" class="project-image">
-    <img src="ss7.jpg" alt="Project Screenshot" class="project-image">
+<div class="card">
+<h3>CSS NC II</h3>
+<p>Computer servicing and troubleshooting.</p>
+</div>
 
-    <h3>Computer Programming 2 - System Project</h3>
+<div class="card">
+<h3>System Design</h3>
+<p>Use Case, Activity Diagrams, and System Analysis.</p>
+</div>
 
-    <h4>Gatchalian Apartment Management System</h4>
-
-    <p>
-        Apartment management system developed to manage tenants,
-        room information, payments, and reservations.
-    </p>
-
-    <p>
-        <strong>Proponents:</strong><br>
-        Judiel Michaella Protasio<br>
-        Alexis Ompod Jr.<br>
-        Shania Molo
-    </p>
+<div class="card">
+<h3>UI/UX Design</h3>
+<p>Creating user-friendly interfaces.</p>
+</div>
 
 </div>
-<div class="card contact">
 
-    <p><strong>Facebook:</strong> Shania Molo</p>
+</section>
 
-    <p>
-        <strong>College Email:</strong><br>
-        molo.shania@dnsc.edu.ph
-    </p>
+<section id="certificates">
+
+<h2 class="section-title">Certificates</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="nc2.jpg" alt="CSS NC II">
+<h3>CSS NC II Certificate</h3>
+</div>
+
+<div class="card">
+<img src="bytefest1.jpg" alt="ByteFest">
+<img src="bytefest2.jpg" alt="ByteFest">
+<h3>ByteFest Certificate</h3>
+</div>
+
+<div class="card">
+<img src="filmfest.jpg" alt="Film Fest">
+<h3>Film Fest Certificate</h3>
+</div>
 
 </div>
+
+</section>
+
+<section id="project">
+
+<h2 class="section-title">Featured Project</h2>
+
+<div class="card">
+
+<div class="carousel">
+
+<button class="prev" onclick="changeSlide(-1)">❮</button>
+
+<img id="projectSlide" src="ss1.jpg" class="project-image">
+
+<button class="next" onclick="changeSlide(1)">❯</button>
+
+</div>
+
+<br>
+
+<h3>Gatchalian Apartment Management System</h3>
+
+<p>
+Computer Programming 2 System Project designed to manage tenants,
+rooms, reservations, and payments.
+</p>
+
+<br>
+
+<p>
+<b>Proponents:</b><br>
+Judiel Michaella Protasio<br>
+Alexis Ompod Jr.<br>
+Shania Molo
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p><b>Facebook:</b> Shania Molo</p>
+<br>
+<p><b>College Email:</b> molo.shania@dnsc.edu.ph</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Shania Molo | Portfolio
+</footer>
+
+<script>
+
+const slides = [
+    "ss1.jpg",
+    "ss2.jpg",
+    "ss3.jpg",
+    "ss4.jpg",
+    "ss5.jpg",
+    "ss6.jpg",
+    "ss7.jpg"
+];
+
+let currentSlide = 0;
+
+function changeSlide(direction){
+
+    currentSlide += direction;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    if(currentSlide < 0){
+        currentSlide = slides.length - 1;
+    }
+
+    document.getElementById("projectSlide").src = slides[currentSlide];
+}
+
+setInterval(() => changeSlide(1), 3000);
+
+</script>
+
+</body>
+</html>
