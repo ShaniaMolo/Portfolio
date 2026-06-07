@@ -40,9 +40,19 @@ nav{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
     color:#4CAF50;
     font-size:24px;
     font-weight:bold;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 nav ul{
@@ -243,8 +253,11 @@ nav{
 <body>
 
 <nav>
-    <div class="logo">Shania Molo</div>
-
+    <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <span>Shania Molo</span>
+</div>
+    
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -337,9 +350,8 @@ databases, and information systems.
 </div>
 
 <div class="card">
-<img src="bytefest1.jpg" alt="ByteFest">
-<img src="bytefest2.jpg" alt="ByteFest">
-<h3>ByteFest Certificate</h3>
+<img src="bytefest.jpg" alt="ByteFest">
+<h3>ByteFest Certificate-Bench Yelling Champion</h3>
 </div>
 
 <div class="card">
